@@ -2,8 +2,8 @@
 // passing the selected word as a parameter.
 
 findSynonyms = function(word){
-    var word = word.selectionText;
-    chrome.tabs.create({ url: `https://www.sinonimos.com.br/${word}/` });
+    var param = word.selectionText;
+    chrome.tabs.create({ url: `https://www.sinonimos.com.br/${param}/` });
 };
 
 // The code below creates a room for our extension
