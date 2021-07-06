@@ -1,9 +1,10 @@
 {
     "manifest_version": 2,
     "name": "Sinônimos",
+    "short_name": "Sinônimos",
+    "author": "Arthur Sudbrack Ibarra",
     "version": "1.0.0",
     "description": "Ache sinônimos para as suas palavras.",
-    "short_name": "Sinônimos",
     "permissions": [
         "<all_urls>",
         "contextMenus",
