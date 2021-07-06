@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Sinônimos",
+    "version": "1.0.0",
+    "description": "Ache sinônimos para as suas palavras.",
+    "short_name": "Sinônimos",
+    "permissions": [
+        "<all_urls>",
+        "contextMenus",
+        "tabs"
+    ],
+    "background": {
+        "scripts": ["main.js"]
+    },
+    "icons": {
+        "16": "images/logo16x16.png",
+        "32": "images/logo32x32.png"
+    }
+}
