@@ -1,20 +1,20 @@
 // This function will open the synonyms site url in a new tab,
-// passing the selected word as a parameter.
+// passing the selected word as a selectionTexteter.
 
 findSynonyms = function(word) {
 
-    let param = word.selectionText;
+    let selectionText = word.selectionText;
     let url;
 
-    if (param) {
+    if (selectionText) {
 
-        param = param.normalize("NFD").replace(/[\u0300-\u036f]/g, "");  
+        selectionText = selectionText.normalize("NFD").replace(/[\u0300-\u036f]/g, "");  
 
-        if(param.includes(" ")) {
-            param = param.replace(" ", "+");
-            url = `https://www.sinonimos.com.br/busca.php?q=${param}`;
+        if(selectionText.includes(" ")) {
+            selectionText = selectionText.replace(" ", "+");
+            url = `https://www.sinonimos.com.br/busca.php?q=${selectionText}`;
         } else {
-            url = `https://www.sinonimos.com.br/${param}/`;
+            url = `https://www.sinonimos.com.br/${selectionText}/`;
         }
         
     }
